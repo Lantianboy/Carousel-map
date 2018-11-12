@@ -1,0 +1,704 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CC9A01E17F8F180541D728C /* Pods_Carousel_map.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE07B9389492134ADCC734C /* Pods_Carousel_map.framework */; };
+		BF75A73B2199543B005C2956 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A73A2199543B005C2956 /* AppDelegate.swift */; };
+		BF75A73D2199543B005C2956 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A73C2199543B005C2956 /* ViewController.swift */; };
+		BF75A7402199543B005C2956 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF75A73E2199543B005C2956 /* Main.storyboard */; };
+		BF75A7422199543C005C2956 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF75A7412199543C005C2956 /* Assets.xcassets */; };
+		BF75A7452199543C005C2956 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF75A7432199543C005C2956 /* LaunchScreen.storyboard */; };
+		BF75A7502199543C005C2956 /* Carousel_mapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A74F2199543C005C2956 /* Carousel_mapTests.swift */; };
+		BF75A75B2199543D005C2956 /* Carousel_mapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A75A2199543D005C2956 /* Carousel_mapUITests.swift */; };
+		BF75A76F219954DC005C2956 /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A768219954DB005C2956 /* ViewController1.swift */; };
+		BF75A770219954DC005C2956 /* MyScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A769219954DB005C2956 /* MyScrollView.swift */; };
+		BF75A771219954DC005C2956 /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A76A219954DB005C2956 /* ViewController2.swift */; };
+		BF75A772219954DC005C2956 /* MoyaNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A76B219954DC005C2956 /* MoyaNetwork.swift */; };
+		BF75A773219954DC005C2956 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A76C219954DC005C2956 /* TableViewCell.swift */; };
+		BF75A774219954DC005C2956 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A76D219954DC005C2956 /* TabBar.swift */; };
+		BF75A775219954DC005C2956 /* ViewController3.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF75A76E219954DC005C2956 /* ViewController3.swift */; };
+		BF75A77B21995788005C2956 /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF75A77721995787005C2956 /* timg.jpeg */; };
+		BF75A77C21995788005C2956 /* timg-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF75A77821995787005C2956 /* timg-4.jpeg */; };
+		BF75A77D21995788005C2956 /* timg-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF75A77921995787005C2956 /* timg-3.jpeg */; };
+		BF75A77E21995788005C2956 /* timg-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = BF75A77A21995787005C2956 /* timg-2.jpeg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF75A74C2199543C005C2956 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF75A72F2199543B005C2956 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF75A7362199543B005C2956;
+			remoteInfo = "Carousel-map";
+		};
+		BF75A7572199543D005C2956 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF75A72F2199543B005C2956 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF75A7362199543B005C2956;
+			remoteInfo = "Carousel-map";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6ACCD375B551F7FA6A31ACC5 /* Pods-Carousel-map.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carousel-map.release.xcconfig"; path = "Pods/Target Support Files/Pods-Carousel-map/Pods-Carousel-map.release.xcconfig"; sourceTree = "<group>"; };
+		AAE07B9389492134ADCC734C /* Pods_Carousel_map.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Carousel_map.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF75A7372199543B005C2956 /* Carousel-map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carousel-map.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF75A73A2199543B005C2956 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF75A73C2199543B005C2956 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF75A73F2199543B005C2956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF75A7412199543C005C2956 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF75A7442199543C005C2956 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF75A7462199543C005C2956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF75A74B2199543C005C2956 /* Carousel-mapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carousel-mapTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF75A74F2199543C005C2956 /* Carousel_mapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel_mapTests.swift; sourceTree = "<group>"; };
+		BF75A7512199543C005C2956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF75A7562199543D005C2956 /* Carousel-mapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carousel-mapUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF75A75A2199543D005C2956 /* Carousel_mapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carousel_mapUITests.swift; sourceTree = "<group>"; };
+		BF75A75C2199543D005C2956 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF75A768219954DB005C2956 /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
+		BF75A769219954DB005C2956 /* MyScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyScrollView.swift; sourceTree = "<group>"; };
+		BF75A76A219954DB005C2956 /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		BF75A76B219954DC005C2956 /* MoyaNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoyaNetwork.swift; sourceTree = "<group>"; };
+		BF75A76C219954DC005C2956 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		BF75A76D219954DC005C2956 /* TabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		BF75A76E219954DC005C2956 /* ViewController3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController3.swift; sourceTree = "<group>"; };
+		BF75A77721995787005C2956 /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		BF75A77821995787005C2956 /* timg-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg-4.jpeg"; sourceTree = "<group>"; };
+		BF75A77921995787005C2956 /* timg-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg-3.jpeg"; sourceTree = "<group>"; };
+		BF75A77A21995787005C2956 /* timg-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "timg-2.jpeg"; sourceTree = "<group>"; };
+		F9DFBA19553402B6182BAF71 /* Pods-Carousel-map.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carousel-map.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Carousel-map/Pods-Carousel-map.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF75A7342199543B005C2956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2CC9A01E17F8F180541D728C /* Pods_Carousel_map.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF75A7482199543C005C2956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF75A7532199543D005C2956 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EDD37D0A039CC1EA8ED745A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AAE07B9389492134ADCC734C /* Pods_Carousel_map.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9F538AD04B86ABB1D35E80F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F9DFBA19553402B6182BAF71 /* Pods-Carousel-map.debug.xcconfig */,
+				6ACCD375B551F7FA6A31ACC5 /* Pods-Carousel-map.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BF75A72E2199543B005C2956 = {
+			isa = PBXGroup;
+			children = (
+				BF75A7392199543B005C2956 /* Carousel-map */,
+				BF75A74E2199543C005C2956 /* Carousel-mapTests */,
+				BF75A7592199543D005C2956 /* Carousel-mapUITests */,
+				BF75A7382199543B005C2956 /* Products */,
+				9F538AD04B86ABB1D35E80F9 /* Pods */,
+				5EDD37D0A039CC1EA8ED745A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF75A7382199543B005C2956 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF75A7372199543B005C2956 /* Carousel-map.app */,
+				BF75A74B2199543C005C2956 /* Carousel-mapTests.xctest */,
+				BF75A7562199543D005C2956 /* Carousel-mapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF75A7392199543B005C2956 /* Carousel-map */ = {
+			isa = PBXGroup;
+			children = (
+				BF75A73A2199543B005C2956 /* AppDelegate.swift */,
+				BF75A73C2199543B005C2956 /* ViewController.swift */,
+				BF75A76B219954DC005C2956 /* MoyaNetwork.swift */,
+				BF75A769219954DB005C2956 /* MyScrollView.swift */,
+				BF75A76D219954DC005C2956 /* TabBar.swift */,
+				BF75A76C219954DC005C2956 /* TableViewCell.swift */,
+				BF75A768219954DB005C2956 /* ViewController1.swift */,
+				BF75A76A219954DB005C2956 /* ViewController2.swift */,
+				BF75A76E219954DC005C2956 /* ViewController3.swift */,
+				BF75A77621995787005C2956 /* images */,
+				BF75A73E2199543B005C2956 /* Main.storyboard */,
+				BF75A7412199543C005C2956 /* Assets.xcassets */,
+				BF75A7432199543C005C2956 /* LaunchScreen.storyboard */,
+				BF75A7462199543C005C2956 /* Info.plist */,
+			);
+			path = "Carousel-map";
+			sourceTree = "<group>";
+		};
+		BF75A74E2199543C005C2956 /* Carousel-mapTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF75A74F2199543C005C2956 /* Carousel_mapTests.swift */,
+				BF75A7512199543C005C2956 /* Info.plist */,
+			);
+			path = "Carousel-mapTests";
+			sourceTree = "<group>";
+		};
+		BF75A7592199543D005C2956 /* Carousel-mapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF75A75A2199543D005C2956 /* Carousel_mapUITests.swift */,
+				BF75A75C2199543D005C2956 /* Info.plist */,
+			);
+			path = "Carousel-mapUITests";
+			sourceTree = "<group>";
+		};
+		BF75A77621995787005C2956 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BF75A77721995787005C2956 /* timg.jpeg */,
+				BF75A77821995787005C2956 /* timg-4.jpeg */,
+				BF75A77921995787005C2956 /* timg-3.jpeg */,
+				BF75A77A21995787005C2956 /* timg-2.jpeg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF75A7362199543B005C2956 /* Carousel-map */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF75A75F2199543D005C2956 /* Build configuration list for PBXNativeTarget "Carousel-map" */;
+			buildPhases = (
+				25A27AB8A0CB942C3D336F4E /* [CP] Check Pods Manifest.lock */,
+				BF75A7332199543B005C2956 /* Sources */,
+				BF75A7342199543B005C2956 /* Frameworks */,
+				BF75A7352199543B005C2956 /* Resources */,
+				245E3A3DDDC01A7FAE2092DA /* [CP] Embed Pods Frameworks */,
+				D639FCC5186CA00426A70264 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Carousel-map";
+			productName = "Carousel-map";
+			productReference = BF75A7372199543B005C2956 /* Carousel-map.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF75A74A2199543C005C2956 /* Carousel-mapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF75A7622199543D005C2956 /* Build configuration list for PBXNativeTarget "Carousel-mapTests" */;
+			buildPhases = (
+				BF75A7472199543C005C2956 /* Sources */,
+				BF75A7482199543C005C2956 /* Frameworks */,
+				BF75A7492199543C005C2956 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF75A74D2199543C005C2956 /* PBXTargetDependency */,
+			);
+			name = "Carousel-mapTests";
+			productName = "Carousel-mapTests";
+			productReference = BF75A74B2199543C005C2956 /* Carousel-mapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF75A7552199543D005C2956 /* Carousel-mapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF75A7652199543D005C2956 /* Build configuration list for PBXNativeTarget "Carousel-mapUITests" */;
+			buildPhases = (
+				BF75A7522199543D005C2956 /* Sources */,
+				BF75A7532199543D005C2956 /* Frameworks */,
+				BF75A7542199543D005C2956 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF75A7582199543D005C2956 /* PBXTargetDependency */,
+			);
+			name = "Carousel-mapUITests";
+			productName = "Carousel-mapUITests";
+			productReference = BF75A7562199543D005C2956 /* Carousel-mapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF75A72F2199543B005C2956 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "张文超";
+				TargetAttributes = {
+					BF75A7362199543B005C2956 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					BF75A74A2199543C005C2956 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BF75A7362199543B005C2956;
+					};
+					BF75A7552199543D005C2956 = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BF75A7362199543B005C2956;
+					};
+				};
+			};
+			buildConfigurationList = BF75A7322199543B005C2956 /* Build configuration list for PBXProject "Carousel-map" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF75A72E2199543B005C2956;
+			productRefGroup = BF75A7382199543B005C2956 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF75A7362199543B005C2956 /* Carousel-map */,
+				BF75A74A2199543C005C2956 /* Carousel-mapTests */,
+				BF75A7552199543D005C2956 /* Carousel-mapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF75A7352199543B005C2956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF75A7452199543C005C2956 /* LaunchScreen.storyboard in Resources */,
+				BF75A7422199543C005C2956 /* Assets.xcassets in Resources */,
+				BF75A77E21995788005C2956 /* timg-2.jpeg in Resources */,
+				BF75A77D21995788005C2956 /* timg-3.jpeg in Resources */,
+				BF75A77B21995788005C2956 /* timg.jpeg in Resources */,
+				BF75A77C21995788005C2956 /* timg-4.jpeg in Resources */,
+				BF75A7402199543B005C2956 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF75A7492199543C005C2956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF75A7542199543D005C2956 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		245E3A3DDDC01A7FAE2092DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Carousel-map/Pods-Carousel-map-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carousel-map/Pods-Carousel-map-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25A27AB8A0CB942C3D336F4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Carousel-map-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D639FCC5186CA00426A70264 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Carousel-map/Pods-Carousel-map-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF75A7332199543B005C2956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF75A771219954DC005C2956 /* ViewController2.swift in Sources */,
+				BF75A76F219954DC005C2956 /* ViewController1.swift in Sources */,
+				BF75A775219954DC005C2956 /* ViewController3.swift in Sources */,
+				BF75A770219954DC005C2956 /* MyScrollView.swift in Sources */,
+				BF75A774219954DC005C2956 /* TabBar.swift in Sources */,
+				BF75A73D2199543B005C2956 /* ViewController.swift in Sources */,
+				BF75A772219954DC005C2956 /* MoyaNetwork.swift in Sources */,
+				BF75A773219954DC005C2956 /* TableViewCell.swift in Sources */,
+				BF75A73B2199543B005C2956 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF75A7472199543C005C2956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF75A7502199543C005C2956 /* Carousel_mapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF75A7522199543D005C2956 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF75A75B2199543D005C2956 /* Carousel_mapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF75A74D2199543C005C2956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF75A7362199543B005C2956 /* Carousel-map */;
+			targetProxy = BF75A74C2199543C005C2956 /* PBXContainerItemProxy */;
+		};
+		BF75A7582199543D005C2956 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF75A7362199543B005C2956 /* Carousel-map */;
+			targetProxy = BF75A7572199543D005C2956 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF75A73E2199543B005C2956 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF75A73F2199543B005C2956 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF75A7432199543C005C2956 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF75A7442199543C005C2956 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF75A75D2199543D005C2956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF75A75E2199543D005C2956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF75A7602199543D005C2956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9DFBA19553402B6182BAF71 /* Pods-Carousel-map.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Carousel-map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TQ.Carousel-map";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF75A7612199543D005C2956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6ACCD375B551F7FA6A31ACC5 /* Pods-Carousel-map.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Carousel-map/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TQ.Carousel-map";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF75A7632199543D005C2956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Carousel-mapTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TQ.Carousel-mapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carousel-map.app/Carousel-map";
+			};
+			name = Debug;
+		};
+		BF75A7642199543D005C2956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Carousel-mapTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TQ.Carousel-mapTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carousel-map.app/Carousel-map";
+			};
+			name = Release;
+		};
+		BF75A7662199543D005C2956 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Carousel-mapUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TQ.Carousel-mapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Carousel-map";
+			};
+			name = Debug;
+		};
+		BF75A7672199543D005C2956 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Carousel-mapUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "TQ.Carousel-mapUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Carousel-map";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF75A7322199543B005C2956 /* Build configuration list for PBXProject "Carousel-map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF75A75D2199543D005C2956 /* Debug */,
+				BF75A75E2199543D005C2956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF75A75F2199543D005C2956 /* Build configuration list for PBXNativeTarget "Carousel-map" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF75A7602199543D005C2956 /* Debug */,
+				BF75A7612199543D005C2956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF75A7622199543D005C2956 /* Build configuration list for PBXNativeTarget "Carousel-mapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF75A7632199543D005C2956 /* Debug */,
+				BF75A7642199543D005C2956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF75A7652199543D005C2956 /* Build configuration list for PBXNativeTarget "Carousel-mapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF75A7662199543D005C2956 /* Debug */,
+				BF75A7672199543D005C2956 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF75A72F2199543B005C2956 /* Project object */;
+}
