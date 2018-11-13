@@ -7,6 +7,11 @@
 //
 
 import UIKit
+//定义代理方法
+protocol touchImagesDelegate {
+    func touchImages(urlStr:String)
+    
+}
 
 class MyScrollView: UIView,UIScrollViewDelegate{
     
@@ -14,6 +19,8 @@ class MyScrollView: UIView,UIScrollViewDelegate{
     var imagesCount:Int!
     let pages = UIPageControl()
     let width = UIScreen.main.bounds.width
+    //声明代理
+    var delegate:touchImagesDelegate?
     
     
     func creatMyScrollView(imageMut:[String],imageHeight:CGFloat){
@@ -29,7 +36,7 @@ class MyScrollView: UIView,UIScrollViewDelegate{
             
             //设置轮播图图片
             imageView1.image = UIImage(named: imageMut[i])
-            
+            imageView1.tag = i
             imageView1.isUserInteractionEnabled = true
 
             scrollView.addSubview(imageView1)
@@ -50,7 +57,12 @@ class MyScrollView: UIView,UIScrollViewDelegate{
         scrollView.isPagingEnabled = true
         //单独创建n+1张轮播图 和第一张图片相同 当图片显示最后一张时把偏移量归零形成无限轮播
         let imageView2 = UIImageView(frame: CGRect(x: CGFloat(imageMut.count) * width, y: 0, width: width, height: imageHeight))
+        imageView2.isUserInteractionEnabled = true
+        imageView2.tag = 0
         imageView2.image = UIImage(named: imageMut[0])
+        let gusture = UITapGestureRecognizer(target: self, action: #selector(singleTap))
+        
+        imageView2 .addGestureRecognizer(gusture)
         scrollView.addSubview(imageView2)
         
         
@@ -103,9 +115,11 @@ class MyScrollView: UIView,UIScrollViewDelegate{
         pages.currentPage = cnt % imagesCount
     }
     
-    
+    //手势点击方法
     @objc func singleTap(sing:UITapGestureRecognizer){
-        
+        let urlArray = ["http://www.baidu.com","http://www.jianshu.com","http://www.juejin.com","http://www.weibo.com"]
+        print(sing.view!.tag)
+        self.delegate? .touchImages(urlStr: urlArray[sing.view!.tag])
         
     }
     
