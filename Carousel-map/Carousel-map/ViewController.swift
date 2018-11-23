@@ -11,6 +11,8 @@ import UIKit
 class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     var array = [String]()
+    let tableView = UITableView()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +25,6 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
         btn .addTarget(self, action: #selector(btnClick), for: UIControl.Event.touchUpInside)
         self.navigationItem.rightBarButtonItem = UIBarButtonItem (customView: btn)
         
-        let tableView = UITableView()
         tableView.frame = CGRect(x: 0, y: 0, width: self.view.frame.size.width, height: self.view.frame.size.height)
         tableView.delegate = self
         tableView.dataSource = self
@@ -71,6 +72,14 @@ class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView .deselectRow(at: indexPath, animated: false)
+        let cell = tableView.cellForRow(at: indexPath) as! UITableViewCell
+//        print(cell)
+        didselect(cell: cell, str: "str")
+    }
+    
+    func didselect(cell:UITableViewCell, str:NSString){
+        
+        print(cell)
     }
     
     @objc func btnClick(sender:UIButton?) {
