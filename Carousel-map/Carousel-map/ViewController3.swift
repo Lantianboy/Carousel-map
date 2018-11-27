@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController3: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource{
+class ViewController3: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UIScrollViewDelegate{
 
 
     var arayMut = NSMutableArray()
@@ -16,6 +16,10 @@ class ViewController3: UIViewController,UICollectionViewDelegate,UICollectionVie
     let height = UIScreen.main.bounds.size.height//获取屏幕高
     var array = [String]()
     var collection:UICollectionView!
+    let scrollView = UIScrollView()
+    var firsTime = true//判断第一次进入页面 设置标示label的初始坐标
+    
+    
     
     
     override func viewDidLoad() {
@@ -27,7 +31,7 @@ class ViewController3: UIViewController,UICollectionViewDelegate,UICollectionVie
     func initView(){
 
         self.view.backgroundColor = UIColor.white
-        array = ["淘宝","京东","拼多多","微信商城","天猫","唯品会"]
+        array = ["京东","拼多多","微信商城"]
         let layout = UICollectionViewFlowLayout()
 
         collection = UICollectionView(frame: CGRect(x: 0, y: 0, width: width, height: 60), collectionViewLayout: layout)
@@ -43,7 +47,7 @@ class ViewController3: UIViewController,UICollectionViewDelegate,UICollectionVie
         //设置滑动方向 横向滑动
         layout.scrollDirection = .horizontal
         //设置item的大小
-        layout.itemSize = CGSize(width: 80, height: 30)
+        layout.itemSize = CGSize(width: (width / CGFloat(array.count)) as CGFloat, height: 30)
         //设置边距
         layout.sectionInset = UIEdgeInsets(top: 15, left: 10, bottom: 15, right: 10)
         layout.minimumLineSpacing = 5
@@ -53,11 +57,41 @@ class ViewController3: UIViewController,UICollectionViewDelegate,UICollectionVie
         collection .addSubview(label)
         
         arayMut.add(0)
-
+        
+        scrollView.frame = CGRect(x: 0, y: collection.frame.origin.y + collection.frame.size.height, width: width, height: height - collection.frame.size.height)
+        scrollView.isPagingEnabled = true
+        scrollView.delegate = self
+        scrollView.contentSize = CGSize(width:(width * CGFloat(array.count)) as CGFloat, height: height - collection.frame.size.height)
+//        scrollView.backgroundColor = UIColor .orange
+        self.view .addSubview(scrollView)
+        
+        for i in 0..<3{
+            
+            let view = UIView(frame: CGRect(x: (CGFloat(i) * width), y: 0, width: width, height: scrollView.frame.size.height))
+            view.tag = i
+            switch view.tag{
+            case 0:
+                view.backgroundColor = UIColor .red
+                break
+                
+            case 1:
+                view.backgroundColor = UIColor .purple
+                break
+                
+            case 2:
+                view.backgroundColor = UIColor .orange
+                break
+                
+            default: break
+            }
+            
+            scrollView .addSubview(view)
+        }
+        
     }
     
     lazy var label:(UILabel) = {
-        let la = UILabel(frame: CGRect(x: 33, y: 45, width: 30, height: 2))
+        let la = UILabel(frame: CGRect(x: 0, y: 45, width: 30, height: 2))
         la.backgroundColor = UIColor .red
         
         return la
@@ -109,7 +143,12 @@ class ViewController3: UIViewController,UICollectionViewDelegate,UICollectionVie
             label.textColor = UIColor.red
         }
         
-
+        if firsTime == true{
+            
+            labelOffeSze(cell: cell, labelStr: array[0])
+            firsTime = false
+        }
+        
         return cell
     }
 
@@ -126,6 +165,8 @@ class ViewController3: UIViewController,UICollectionViewDelegate,UICollectionVie
             collectionView.scrollToItem(at: IndexPath.init(row: indexPath.item, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
         }
         
+        
+        scrollView.contentOffset.x = (CGFloat(indexPath.item) * width)
 
         //获取点击的cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as UICollectionViewCell
@@ -176,10 +217,31 @@ class ViewController3: UIViewController,UICollectionViewDelegate,UICollectionVie
         return strSize.height
         
     }
-
     
-    
-    
-    
+    //scrollView delegate 滑动结束后调用
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        
+        print(scrollView.contentOffset)
+        
+        let scrContentOffset:NSInteger = NSInteger(scrollView.contentOffset.x / width)
+        //更新数据改变变红的item
+        arayMut .removeAllObjects()
+        arayMut.add(scrContentOffset)
+        collection .reloadData()
+        //修改collection偏移度
+        if scrContentOffset != array.count - 1{
+            
+            collection.scrollToItem(at: IndexPath.init(row: scrContentOffset + 1, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
+        }else{
+            collection.scrollToItem(at: IndexPath.init(row: scrContentOffset, section: 0), at: UICollectionView.ScrollPosition.centeredHorizontally, animated: true)
+        }
+        
+        //获取相应的cell
+        let cell = collection.dequeueReusableCell(withReuseIdentifier: "cell", for: IndexPath.init(item: scrContentOffset, section: 0))
+        //修改标示label的位置和宽度
+        labelOffeSze(cell: cell, labelStr: array[scrContentOffset])
+        
+        
+    }
     
 }
